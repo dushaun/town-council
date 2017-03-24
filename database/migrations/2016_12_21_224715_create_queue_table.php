@@ -23,6 +23,7 @@ class CreateQueueTable extends Migration
             $table->integer('type');
             $table->dateTime('queued_at');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
